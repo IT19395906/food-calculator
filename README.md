@@ -1,5 +1,3 @@
-# food-calculator
-
 create an application which calculate which size of 
 pizza is best for group bookings.
 
@@ -25,7 +23,7 @@ They have 5 sizes of Pizza which their customers can order.
 Create a program that will calculate how much the cost would be for each size of pizza, and 
 therefore which is the lowest cost for the customer
 
-## implementation
+# food-calculator
 React.js web
 
 _dependencies_
