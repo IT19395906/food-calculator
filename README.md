@@ -40,9 +40,8 @@ npm install bootstrap
 - used forEach
 - can use a for loop instead of forEach to achieve the same output.
 
-```const { people, pieces } = value;``` is using destructuring assignment to extract the people and pieces properties from the value object. In your original code, value is a state object that holds the number of people and pieces entered by the user in the form.
-
-By using this statement, you are extracting these values and creating variables people and pieces with the corresponding values. This makes it easier to work with these values later in the function.
-
-If you omit this statement, you would need to access value.people and value.pieces throughout the function instead of using the shorter variables people and pieces. For example:
+```const { people, pieces } = value;``` is using destructuring assignment to extract the people and pieces properties from the value object. 
+By using this statement, we are extracting these values and creating variables people and pieces with the corresponding values. This makes it easier to work with these values later in the function.
+If you omit this statement, you would need to access value.people and value.pieces throughout the function instead of using the shorter variables people and pieces.
+example ```value.people > 0 && value.pieces > 0```
 
