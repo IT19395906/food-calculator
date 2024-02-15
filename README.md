@@ -45,3 +45,5 @@ By using this statement, we are extracting these values and creating variables p
 If you omit this statement, you would need to access value.people and value.pieces throughout the function instead of using the shorter variables people and pieces.
 example ```value.people > 0 && value.pieces > 0```
 
+```{result && (<div className='mt-4'>``` is short circuit. one of conditional rendering in React. It utilizes the logical AND (&&) operator for conditional rendering.
+expression before && is evaluated, and if it is true, then the expression after && is rendered. If the expression before && is falsy, React does not render the component after &&.
