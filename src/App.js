@@ -25,7 +25,8 @@ function App() {
       let minCost = Number.MAX_VALUE;
       let bestSize = null;
 
-      sizes.forEach((pizzaSize) => {
+      for (let i = 0; i < sizes.length; i++) {
+        const pizzaSize = sizes[i];
         const totalPieces = people * pieces;
         const totalCost = (totalPieces / pizzaSize.pieces) * pizzaSize.price;
 
@@ -33,7 +34,7 @@ function App() {
           minCost = totalCost;
           bestSize = pizzaSize.size;
         }
-      });
+      }
 
       setResult({
         sizes: sizes.map((pizzaSize) => ({
@@ -71,18 +72,18 @@ function App() {
             <button className='btn btn-success btn-lg' type='submit'>Submit</button>
           </form>
           {result && (
-          <div className='mt-4'>
-            <h4>Cost for each size:</h4>
-            <ul>
-              {result.sizes.map((pizzaSize) => (
-                <li key={pizzaSize.size}>
-                  {pizzaSize.size}: ${pizzaSize.cost.toFixed(2)}
-                </li>
-              ))}
-            </ul>
-            <h4>Best Size: {result.bestSize}</h4>
-          </div>
-        )}
+            <div className='mt-4'>
+              <h4>Cost for each size:</h4>
+              <ul>
+                {result.sizes.map((pizzaSize) => (
+                  <li key={pizzaSize.size}>
+                    {pizzaSize.size}: ${pizzaSize.cost.toFixed(2)}
+                  </li>
+                ))}
+              </ul>
+              <h4>Best Size: {result.bestSize}</h4>
+            </div>
+          )}
         </div>
       </div>
     </div>
