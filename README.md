@@ -1,6 +1,6 @@
 # food-calculator
 
-create an application which helps them calculate which size of 
+create an application which calculate which size of 
 pizza is best for group bookings.
 
 The application must let the user enter:
@@ -47,3 +47,5 @@ example ```value.people > 0 && value.pieces > 0```
 
 ```{result && (<div className='mt-4'>``` is short circuit. one of conditional rendering in React. It utilizes the logical AND (&&) operator for conditional rendering.
 expression before && is evaluated, and if it is true, then the expression after && is rendered. If the expression before && is falsy, React does not render the component after &&.
+
+let is used because minCost and bestSize are updated inside the loop based on certain conditions. use for variables that can be reassigned. If you use const here, you will encounter an error when trying to reassign value. const is used for variables that should not be reassigned after initialization. const would be appropriate for minCost and bestSize if you never plan to reassign these variables.
