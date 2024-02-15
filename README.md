@@ -48,4 +48,8 @@ example ```value.people > 0 && value.pieces > 0```
 ```{result && (<div className='mt-4'>``` is short circuit. one of conditional rendering in React. It utilizes the logical AND (&&) operator for conditional rendering.
 expression before && is evaluated, and if it is true, then the expression after && is rendered. If the expression before && is falsy, React does not render the component after &&.
 
+minCost with Number.MAX_VALUE is to set an initial value that is guaranteed to be larger than any potential calculated cost. This value acts as a starting point for the comparison within the loop.
+If you didn't initialize minCost to Number.MAX_VALUE, you would need to choose some other initial value for minCost that is guaranteed to be larger than any valid cost.
+By setting minCost to Number.MAX_VALUE, you ensure that the first comparison in the loop will always result in the current cost being smaller than minCost
+
 let is used because minCost and bestSize are updated inside the loop based on certain conditions. use for variables that can be reassigned. If you use const here, you will encounter an error when trying to reassign value. const is used for variables that should not be reassigned after initialization. const would be appropriate for minCost and bestSize if you never plan to reassign these variables.
