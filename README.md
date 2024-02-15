@@ -24,3 +24,12 @@ They have 5 sizes of Pizza which their customers can order.
 
 Create a program that will calculate how much the cost would be for each size of pizza, and 
 therefore which is the lowest cost for the customer
+
+React.js web
+
+_dependencies_
+
+```bash
+npm install bootstrap
+```
+**import bootstrap/dist/css/bootstrap.min.css** in index.js
